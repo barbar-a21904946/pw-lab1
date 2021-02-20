@@ -10,20 +10,70 @@
        
         Tinhamos 4 tópicos neste trabalho:</p>
         <ul>
-<li>1. Alojamento de página Web na cloud</li>
-<li>2. Conhecer a Internet</li>
-<li>3. Acesso via HTTP à minha página Web</li>
-<li>4. Página Web Report.html</li>
-<li>5. Submissão do Laboratório</li>
+            <ol>
+                <li> Alojamento de página Web na cloud</li>
+<li>Conhecer a Internet</li>
+<li>Acesso via HTTP à minha página Web</li>
+<li>Página Web Report.html</li>
+<li> Submissão do Laboratório</li>
+</ol>
 
         </ul>
     Começámos por criar um repositório GitHub,posteriormente alojar o site exemplo no Heroku (continuar) 
 
     <h2>2. Conhecer a Internet</h2>
     <h3>Endereços IP</h3>
-        <p>1)Obtenha informação sobre o IP do seu PC e seu telemóvel.</p>
-        <p>O meu IP é: 95.92.159.96</p>
-        <p>Este IP está localizado na zona da Grande Lisboa,como é possivel observar na imagem:</p>
-        <img src="" alt="">
+        <h4>1)Obtenha informação sobre o IP do seu PC e seu telemóvel.</h4>
+        <p>O meu IP do PC é: 95.92.159.96</p>
+        <p>Este IP está localizado na zona da Grande Lisboa,como é possivel observar na  seguinte imagem:</p>
+        <img src="img/myIp2.0.png" >
+        <p> </p>
+        <p>O meu IP do meu telemovel é:87.196.72.42</p>
+        <p>Este IP  do meu telemovel está localizado na zona da Grande Lisboa,como é possivel observar na  seguinte imagem:</p>
+        <img src="img/ipPhone.png" >
+        <h2>2)Obtenha informação sobre o IP do servidor Heroku onde está a sua app.</h2>
+        <ul>
+            <li><h4>Obtenha e anote o endereço IP do servidor Web onde está alojada a sua página no Heroku</h4></li>
+        </ul>
+        <p>O endereço IP do servidor Web onde está alojada a sua página no Heroku  é : 54.156.19.143 </p>
+        <p>E encontra-se nos Estados Unidos Da América no estado de Virginia</p>
+        <img src="img/ipdoServidor.png" >
+        <h2>Percurso</h2>
+        <ul><li>
+            <h3>Use a ferramenta GeoTraceroute, Em https://geotraceroute.com/, para visualizar graficamente por onde passam os pacotes IP, até chegar ao seu servidor Heroku. </h3>
+        </li></ul>
+        <p>O IP do nosso servidor Web do Heroku encontra-se localizado no Estados Unidos.Mas para este ir até lá faz um percurso até la chegar .O Percurso é:</p>
+        <h4>(Origem)Portugal, Prior Velho(0km)  -> Portugal, Lisboa(8km)  ->  Inglaterra, London(1593km)  ->  USA, New York(5579km)(Destino)</h4>
+<img src="img/portugal.png" >
+<img src="img/englad.svg" >
+<img src="img/bandeira_americana_bb.jpg" >
+<h3>Inspect</h3>
+<ul><li><h3>Explique o que aparece. Com a ferramenta de Snip (Tecla Windows + Shift + S) copie a imagem com info dos ficheiros descarregados.</h3></li>
+<p>Ao clicar na barra network aparece no lado  inferior esquerdo dois ficheiros:
+</p>
+<li>Um com o nome lab1-a21904946.herokuapp.com/</li>
+<li>Outro com o nome: wordcloud.png</li></ul>
+<img src="img/fch.png">
+<ul>
+    <li><h4>Anote quantos ficheiros são descarregados na sequencia de um clique num hiperlink.</li>
+    <p>Neste caso foram dois ficheiros.</h4></p>
+    <li>
+<h4>Anote o tipo de ficheiros, timings de espera e de descarga</h4>        </li>
+    <p><li>Tipo de ficheiros:</li>
+    O tipo de ficheiros são: tipo document e tipo png
+    <li><p>timing de espera do document:60.40 ms</p>
+    <p>timing de espera do png:60.69ms</p>
+<p>content download do document:1,44ms</p>
+<p>content download do png:14,27ms</p></li>
+    </p>
+    <li><h3>Selecione cada um dos ficheiros descarregados. Anote o que observa, quando seleciona:</h3>
+    <p>Preview:Na parte do preview do documento observo todo o texto da página ou seja , é na parte do preview que visualizamos a pagina sem as tags html.</p>
+<p>Já na preview da imagem observo a imagem em si, a imagem que foi colocada na pasta, e não o url da imagem </p>
+<p></p>
+<p>No Headers: tem todas as informaçoes a cerca do cabeçalho, ou seja,informaçoes mais técnica a cerca do tipo de servidor, da data da ultima atulização da página,o status code,ect...Tudo isto está divido em separadores:General,Response Headers,Request Headers,ect...</p><p>
+    <p>Timing: O timing dá-nos informação a cerca de todo o tempo de duração.Sobre o tempo que os ficheiros demoram a ser descarregaos, ao tempo de conexão e no final dá-nos o tempo total </p>
+</p></li>
+</ul>
+<h2>Este Trabalho foi realizado pela aluna: Bárbara Quaresma-a21904946</h2>
 </body>
 </html>
