@@ -7,16 +7,21 @@
 </head>
 <body>
     <center>    <h3>Quizz Time</h3></center>
-
-    <form action="tatamano121812@gmail.com">
+    <script>
+        function myFunction() {
+          document.getElementById("demo").style.color = "red";
+        }
+        </script>
+    <form method="POST" action="tatamano121812@gmail.com">
         <fieldset>
             <legend>Identificação:</legend>
-         <p>Nome:    <input type="text" name="nome" placeholder="Insira o seu nome"></p>
+         <p>Nome:    <input type="text" name="nome" placeholder="Insira o seu nome" autocomplete="on" required onclick="myFunction()"></p>
 
-<p>Apelido:<input type="text" name="Apelido" placeholder="Insira o seu Apelido"></p>
+<p>Apelido:<input type="text" name="Apelido" placeholder="Insira o seu Apelido" autocomplete="on" required></p>
 
-<p>Email : <input type="text" name="Email" placeholder="Insira o seu email"></p>
+<p>Email : <input type="text" name="Email" placeholder="Insira o seu email" autocomplete="on" required></p>
 <p>Data de Nascimento: <input type="date" name="dataNascimento"></p>
+<p>País onde habita:<input value="Portugal" readonly ></p>
 <br>
 
 <p>Qual o seu tipo de ocupação:</p>
@@ -25,7 +30,7 @@
     <label >
         <input type="radio" name="Tipo De Ocupação" value="Trabalhador-Estudante">Trabalhador-Estudante
     </label>
-    <label ><input type="radio" name="Tipo De Ocupação" value="Outro">Outro</label> <textarea name="" id="" cols="15" rows="1"></textarea>
+    <label ><input type="radio" name="Tipo De Ocupação" value="Outro">Outro</label> <textarea name="" id="" cols="15" rows="1" maxlength="15"></textarea>
 
 
         </fieldset>
@@ -56,9 +61,46 @@
            <option value="5 milhoes">
          </datalist>
          <input type="submit">
+         <p>
+             <label for="favcolor"> Qual a cor predominante da bandeira dos estados Unidos Da América?</label>
+           <input type="color" name="favcolor" id="favcolor" value="#ff0000">
+         </p> 
+         <label for="quantity">Quantos Skateparks existem em Los Angels:</label>
+         <input type="number" id="quantity" name="quantity" min="0" max="50" step="10" value="0"
+         >
+         <br>
+         <p>Que atividades mais comuns se faz   Los Angeles?</p>
+         <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+         <label for="vehicle1"> Visitar a placa de Hollywood</label><br>
+         <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+         <label for="vehicle2">Visitar a Calçada Da Fama</label><br>
+         <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+         <label for="vehicle3"> Visitar o empire state building</label>
+         <br>
+         <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+         <label for="vehicle3"> Visitar Santa Monica</label>
+         <br>
+         <br>
+         <form action=http://www.google.com/search>
+            Pesquisa no Google sobre a metereologia de Los Angels:
+            <input type="text" name="question">
+            <input type="submit" value="submeter">
+            </form>
+         <br><br>
         </fieldset>
 
-       
+        
+
+
+
+        <fieldset>
+            <legend>Qual o seu nível de Satisfação perante este mini quizz?</legend>
+            <label for="vol">Escolha entre (0 e 100):</label>
+            <input type="range" name="vol" id="vol" min="0" max="100">
+            
+        </fieldset>
+
+       <input type="image" src="./images/submit-button-md image.png" alt="Submit" width="48" height="48" onclick="alert('O seu Quizz foi realizado e enviado com sucesso!Espero que tenha gostado deste pequeno momento!')">
 
     
 
