@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz Time</title>
+</head>
+<body>
+    <link rel="shortcut icon" type="image/x-icon" href="images/apple-icon-60x60.ico"/>>
+    <body style="background-color:	#00f3e785;"></body>
+</center>
+<br>
+<center>
+    <b> 
+        <a href="index.html"
+        rel="noopener noreferrer">Introdução | </a>
+<a href="local.html"
+rel="noopener noreferrer"
+rel="noopener noreferrer">Localização | </a>
+<a href="multimedia.html"
+rel="noopener noreferrer">Multimédia | </a>
+<a href="info.html"
+rel="noopener noreferrer">Informações | </a>
+<a href="../Lab3/quizz.html"
+        rel="noopener noreferrer">Quizz| </a>
+<a href="../Lab3/comentarios.html">Comentários | </a>
+
+<a href="../Lab3/quizz.html"
+rel="noopener noreferrer">Home</a></center>  <h3>Quizz Time</h3></center>
+    <script>
+        function myFunction() {
+          document.getElementById("demo").style.color = "red";
+        }
+        </script>
+    <form method="POST" action="mailto:tatamano121812@gmail.com">
+        <fieldset>
+            <legend>Identificação:</legend>
+         <p>Nome:    <input type="text" name="nome" placeholder="Insira o seu nome" autocomplete="on" required onclick="myFunction()"></p>
+
+<p>Apelido:<input type="text" name="Apelido" placeholder="Insira o seu Apelido" autocomplete="on" required></p>
+
+<p>Email : <input type="text" name="Email" placeholder="Insira o seu email" autocomplete="on" required></p>
+<p>Data de Nascimento: <input type="date" name="dataNascimento"></p>
+<p>País onde habita:<input value="Portugal" readonly ></p>
+<br>
+
+<p>Qual o seu tipo de ocupação:</p>
+    <label ><input type="radio" name="Tipo De Ocupação" value="Estudante" >Estudante</label>
+    <label><input type="radio" name ="Tipo de Ocupação" value="Trabalhador">Trabalhador</label>
+    <label >
+        <input type="radio" name="Tipo De Ocupação" value="Trabalhador-Estudante">Trabalhador-Estudante
+    </label>
+    <label ><input type="radio" name="Tipo De Ocupação" value="Outro">Outro</label> <textarea name="" id="" cols="15" rows="1" maxlength="15"></textarea>
+
+
+        </fieldset>
+        <fieldset>
+          <legend>Perguntas sobre Los Angels! 🤩</legend>  
+          <p> Em que país se encontra a cidade de Los Angels?
+              <br>
+              <label for="País"><select name="País" >
+              <optgroup label="Europa:"><option value="Portugal">Portugal</option>
+            <option value="França">França</option>
+        <option value="Espanha">Espanha</option></optgroup>
+        <optgroup label  ="Asia">
+            <option value="China">China</option>
+            <option value="Filipinas">Filipinas</option>
+        </optgroup>
+        <optgroup label="América">
+              <option value="EUA">EUA</option>
+              <option value="Brasil">Brasil</option>
+        </optgroup>
+  
+          </select></label></p>
+         
+         <p>Na sua perceção quantos habitantes tem Los Angels?</p>
+         <input list="browsers" name="browser">
+         <datalist id="browsers">
+           <option value="2 milhoes">
+           <option value="4 milhoes">
+           <option value="5 milhoes">
+         </datalist>
+         <input type="submit">
+         <p>
+             <label for="favcolor"> Qual a cor predominante da bandeira dos estados Unidos Da América?</label>
+           <input type="color" name="favcolor" id="favcolor" value="#ff0000">
+         </p> 
+         <label for="quantity">Quantos Skateparks existem em Los Angels:</label>
+         <input type="number" id="quantity" name="quantity" min="0" max="50" step="10" value="0"
+         >
+         <br>
+         <p>Que atividades mais comuns se faz   Los Angeles?</p>
+         <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+         <label for="vehicle1"> Visitar a placa de Hollywood</label><br>
+         <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+         <label for="vehicle2">Visitar a Calçada Da Fama</label><br>
+         <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+         <label for="vehicle3"> Visitar o empire state building</label>
+         <br>
+         <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+         <label for="vehicle3"> Visitar Santa Monica</label>
+         <br>
+         <br>
+         <form action=http://www.google.com/search>
+            Pesquisa no Google sobre a metereologia de Los Angels:
+            <input type="text" name="question">
+            <input type="submit" value="submeter">
+            </form>
+         <br><br>
+        </fieldset>
+
+        
+
+
+
+        <fieldset>
+            <legend>Qual o seu nível de Satisfação perante este mini quizz?</legend>
+            <label for="vol">Escolha entre (0 e 100):</label>
+            <input type="range" name="vol" id="vol" min="0" max="100">
+            
+        </fieldset>
+
+       <input type="image" src="./images/submit-button-md image.png" alt="Submit" width="48" height="48" onclick="alert('O seu Quizz foi realizado e enviado com sucesso!Espero que tenha gostado deste pequeno momento!')">
+
+    
+
+
+
+
+    </form>
+</body>
+</html>
