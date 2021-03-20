@@ -4,25 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stars.css">
     <title>PW Labs</title>
+    <style>
+      .Titulo {
+       border: 5px dotted rgb(155, 54, 238) ; 
+       margin: auto;
+       position: relative;
+     bottom: 175px;
+    left: 50px;
+      }
+    </style>
 </head>
-<body> <center>  <h1>Laboratórios Programação Web 👩🏽‍💻</h1></center>
-  <body style="background-color: crimson;"
-    <p></p>
-    <body>
+<div class="container"><div class="stars"></div>
+<body>   <h1 class="Titulo">Laboratórios Programação Web 👩🏽‍💻</h1>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .text {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      font-size: 5rem;
+      color: #fff;
+      border: 3px solid #fff;
+      padding: 2rem 4rem;
+    }
+
+    .gradient {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100vw;
+
+      /* Colors generated on: https://colorhunt.co/palette/179481 */
+      background: linear-gradient(45deg, #084177, #687466, #cd8d7b, #fbc490);
+      background-size: 300% 300%;
+      animation: colors 15s ease infinite;
+    }
+
+    @keyframes colors {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .text {
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+      }
+    }
+  </style>
+  <body class="gradient">
+
+  <div class="container"><div class="stars"></div>
+  
+    <div><ul><li>
    
-    <ul><li>
-        <a href="Lab1/index.html">Laboratório1 : Conhecer a Internet com a minha primeira página Web</a>
+
+    
+     <p class="pinta"><a  href="Lab1/index.html"> Laboratório1 : Conhecer a Internet com a minha primeira página Web</a></p>   
         <p> </p> </li>
-      <li> <a href="Lab2/index.html"> Laboratório2: Explorando o HTML com o meu primeiro website </a> <p></p> </li> 
-      <li><a href="Lab3/index.html">Laboratório3:Inclusão de formulários e imagens SVG no meu website</a></li>
+      <li> <a class="Laboratorios" href="Lab2/index.html"> Laboratório2: Explorando o HTML com o meu primeiro website </a> <p></p> </li> 
+      <li><a  class="Laboratorios"href="Lab3/index.html">Laboratório3:Inclusão de formulários e imagens SVG no meu website</a></li>
       <p></p>
-      <li><a href="Lab4/index.html">Laboratório4:Integração de elementos semânticos HTML5 no meu website e estilização com seletores e propriedades CSS</a></li>
+      <li><a  class="Laboratorios" href="Lab4/index.html">Laboratório4:Integração de elementos semânticos HTML5 no meu website e estilização com seletores e propriedades CSS</a></li>
      
     
     
         
  
-</ul>
+</ul></div>
+    
 </body>
 </html>
